@@ -18,8 +18,19 @@ div {
     position: absolute;
 }
 
+/*Styling for Nav links (nav options)*/
 .navop {
-    
+    color: #BBBBBB;
+    padding: 10px;
+    background-color: #4F5052;
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    float: left;
+}
+
+.left {
+    border-top-left-radius: 10px;
 }
 
 /*Styling for List Navigation Bar*/
@@ -86,13 +97,7 @@ div {
 
 /*Styling for Links*/
 a {
-    color: #BBBBBB;
     text-decoration: none;
-    padding: 10px;
-    background-color: #4F5052;
-    display: inline-block;
-    width: 15%;
-    text-align: center;
 }
 
 /*STyling for Visited Links*/
