@@ -11,11 +11,23 @@ div {
 
 }
 
+/*Styling for Banner*/
+.banner {
+    background-color: #727274;
+    height: 200px;
+    border-top-left-radius: 10px;
+    margin-top: -75px;  
+    margin-left: -75px;
+    margin-right: -75px;
+}
+
+
+/*Page Navigation bar Styling*/
 /*Styling for Navigation Bar*/
 .nav {
-    background-color: #071D21; 
     width: 40%;
     position: absolute;
+    border-top-left-radius: 10px;
 }
 
 /*Styling for Nav links (nav options)*/
@@ -29,9 +41,15 @@ div {
     float: left;
 }
 
+/*Styling for leftmost link on the navigation bar*/
 .left {
     border-top-left-radius: 10px;
 }
+/*Styling for rightmost link on the navigation bar*/
+.right {
+    border-bottom-right-radius: 10px;
+}
+/*end of page navigation bar styling*/
 
 /*Styling for List Navigation Bar*/
 .listnav {
@@ -41,15 +59,6 @@ div {
     border-bottom: solid 5px #727274;
 }
 
-/*Styling for Banner*/
-.banner {
-    background-color: #727274;
-    height: 200px;
-    
-    margin-top: -75px;  
-    margin-left: -75px;
-    margin-right: -75px;
-}
 
 /*Styling for Main*/
 .main {
@@ -85,6 +94,8 @@ div {
     margin-left: 1%;
     height: 200px;
 }
+/*End of Main Styling*/
+
 
 /*Styling for Footer*/
 .footer {
@@ -95,12 +106,13 @@ div {
     margin-top: 200px;
 }
 
+
 /*Styling for Links*/
 a {
     text-decoration: none;
 }
 
-/*STyling for Visited Links*/
+/*Styling for Visited Links*/
 a:visited {
     padding: 10px;
 }
@@ -117,5 +129,5 @@ a:active {
     padding: 10px;
     
 }
-
+/*End of Styling for links*/
 
