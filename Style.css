@@ -2,14 +2,14 @@
 body {
     background: rgb(4,4,4) no-repeat fixed center;
     background-size: auto; 
-    margin: 100px 8%;
+    margin: 100px 8% 0;
     color: rgb(187,187,187);
 }
 
 /*Styling for Banner Container*/
 .banner {
-    background-color: rgb(114,114,116);
-    background: ;
+    background: rgb(114,114,116) url("images/banner2.jpg") no-repeat center;
+    background-size: cover;
     height: 10%;
     border-top-left-radius: 10px;
     margin-top: -75px;  
@@ -23,6 +23,11 @@ body {
     padding: 4% 0 0.5% 0;
     font-family: 'Spectral SC', serif;
 }
+
+.banner p {
+    background-color: rgba(4,4,4,0.7);
+}
+
 /*Styling for Website Title Image*/
 .banner img {
     height: 0.75em;
@@ -89,13 +94,18 @@ body {
 .main {
     background-color: rgb(79,80,82); 
     margin-top: 50px;
-    height: 550px;
+    height: 650px;
     padding: 1%;
     font-family: 'Noto Sans', sans-serif;
     min-width: 800px;
     max-width: 1300px;
     margin: auto;
 }
+
+.long {
+    height: 1050px;
+}
+
 /*Heading of Page styling*/
 h1 {
     margin-top: -0.25%;
@@ -131,13 +141,17 @@ hr {
     border-bottom: solid 3px rgb(4,4,4);
     border-radius: 10px;
     margin-right: 1%;
-    height: 430px;
+    min-height: 430px;
     margin-top: 15px;
 }
 
 .text {
     padding: 10px;
     padding-right: 15px;
+}
+
+h3 {
+    margin-bottom: 0;
 }
 
 /*Paragraph Styling*/
@@ -275,8 +289,28 @@ p {
     color: rgb(187,187,187);
     text-align: center;
     padding: 20px;
-    margin: 100px -10% -100px;
+    margin: 100px -10% 0;
 }
+/*Table styling*/
+table {
+    margin:auto;
+    width: 800px;
+    height: auto;
+}
+
+th {
+    background-color: ;
+    width: 50px;
+}
+
+table a {
+    color: rgb(187,187,187);
+}
+
+td {
+    
+}
+
 /*End of styling for footer*/
 
 /*Styling for Gallery*/
@@ -408,6 +442,11 @@ a {
     .main {
         min-width: auto;
         width: auto;
+        height: 700px;
+    }
+    
+    .long {
+        height: 1300px;
     }
     
     .lower {
@@ -452,12 +491,21 @@ a {
     
     .word {
         width: 100%;
-        height: 200px;
+        height: 250px;
     }
+    
+    .tall {
+        height: 850px;
+    }
+    
     .vis {
         width: 100%;
         float: none;
-        margin-top: 250px;
+        margin-top: 500px;
+    }
+    
+    .gap {
+        margin-top: 900px;
     }
     
     .column {
