@@ -1,45 +1,77 @@
 /*Body/Whole Page Styling*/
 body {
-    background: #040404 no-repeat fixed center;
+    background: rgb(4,4,4) no-repeat fixed center;
     background-size: auto; 
-    margin: 100px;
-    color: #BBBBBB;
+    margin: 100px 8%;
+    color: rgb(187,187,187);
 }
 
-/*Styling for all divs*/
-div {
-
-}
-
-/*Styling for Banner*/
+/*Styling for Banner Container*/
 .banner {
-    background-color: #727274;
+    background-color: rgb(114,114,116);
     background: ;
-    height: 200px;
+    height: 10%;
     border-top-left-radius: 10px;
     margin-top: -75px;  
     margin-left: -75px;
     margin-right: -75px;
+    text-align: center;
 }
-
+/*Styling for Website Title Text*/
+.banner h1 {
+    font-size: 6em;
+    padding: 4% 0 0.5% 0;
+    font-family: 'Spectral SC', serif;
+}
+/*Styling for Website Title Image*/
+.banner img {
+    height: 0.75em;
+}
+/*End of Banner styling*/
 
 /*Page Navigation bar Styling*/
-/*Styling for Navigation Bar*/
+/*Styling for Navigation Bar container*/
 .nav {
-    width: 40%;
+    min-width: 45%;
+    max-width: 70%;
     position: absolute;
     border-top-left-radius: 10px;
 }
 
 /*Styling for Nav links (nav options)*/
 .navop {
-    color: #BBBBBB;
+    color: rgb(187,187,187);
     padding: 10px;
-    background-color: #4F5052;
+    background-color: rgb(79,80,82);
     display: inline-block;
-    width: 15%;
+    min-width: 10%;
+    max-width: 22%;
     text-align: center;
     float: left;
+    font-family: 'Spectral SC'. serif;
+    font-size: 1.25em;
+    animation: navunhover 1s ease-in-out 0s 1 reverse;
+    animation-fill-mode: forwards;
+}
+
+/*Styling for link that is active*/
+.nav .active {
+    background-color: rgba(255,255,255,0.3);
+    color: rgb(4,4,4)
+}
+/*Styling for Nav links when cursor hover*/
+.navop:hover {
+    animation: navhover 1s ease-in-out 0s 1 normal;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+/*animation for navigation bar links on hover*/
+@keyframes navhover {
+    from {background-color: auto;} to {background-color: rgba(7,29,33,0.7);}
+}
+
+@keyframes navunhover {
+    from {background-color: auto;} to {background-color: rgba(7,29,33,0.7);}
 }
 
 /*Styling for leftmost link on the navigation bar*/
@@ -52,83 +84,407 @@ div {
 }
 /*end of page navigation bar styling*/
 
-/*Styling for List Navigation Bar*/
-.listnav {
-    background-color:#071D21;
-    height: 50px;
-    border-top: solid 5px #727274;
-    border-bottom: solid 5px #727274;
-}
 
-
-/*Styling for Main*/
+/*Styling for Main container*/
 .main {
-    background-color: #071D21; 
+    background-color: rgb(79,80,82); 
     margin-top: 50px;
-    height: 1000px;
+    height: 550px;
     padding: 1%;
+    font-family: 'Noto Sans', sans-serif;
+    min-width: 800px;
+    max-width: 1300px;
+    margin: auto;
+}
+/*Heading of Page styling*/
+h1 {
+    margin-top: -0.25%;
+}
+/*Styling for Horizontal Line after Heading of page*/
+hr {
+    border: solid 1px rgb(187,196,201);
 }
 
 /*Styling for Image/Image Gallery*/
 .vis {
-    background-color: #071D21; 
-    width: 40%;
+    width: 60%;
     float: left;
-/*Border and Outside Styling*/
-    border-top: solid 3px #727274;
-    border-bottom: solid 3px #727274;
-    border-radius: 10px;
-    height: 200px;
+    
+/*Border and Outside Styling of Main Image Container*/
+    border-top: solid 3px rgb(4,4,4);
+    border-bottom: solid 3px rgb(4,4,4);
+    border-radius: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0;
+    margin-top: 15px;
 }
 
 /*Styling for Text/Information on Main*/
 .word {
-    background-color: #071D21; 
-    color: #BBBBBB;
-    padding 20px;
+    background-color: rgb(7,29,33);
+    color: rgb(187,187,187);
     float: left;
-    width: 59%;
-/*Border and Outside Styling*/
-    border-top: solid 3px #727274;
-    border-bottom: solid 3px #727274;
+    width: 39%;
+/*Border and Outside Styling of Main Text Container*/
+    border-top: solid 3px rgb(4,4,4);
+    border-bottom: solid 3px rgb(4,4,4);
     border-radius: 10px;
-    margin-left: 1%;
-    height: 200px;
+    margin-right: 1%;
+    height: 430px;
+    margin-top: 15px;
+}
+
+.text {
+    padding: 10px;
+    padding-right: 15px;
+}
+
+/*Paragraph Styling*/
+p {
+    margin: 1%;
 }
 /*End of Main Styling*/
 
 
-/*Styling for Footer*/
-.footer {
-    background-color: #071D21;
-    height: 50px;
-    color: white;
-    margin-top: 200px;
-    margin-top: 200px;
+/*Styling for Lower Container*/
+.lower {
+    background-color: rgb(79,80,82);
+    height: 500px;
+    padding: 1%;
+    font-family: 'Noto Sans', sans-serif;
+    min-width: 800px;
+    max-width: 1300px;
+    margin: auto;
 }
 
+/*Styling for List Navigation Bar container*/
+.listnav {
+    background-color:rgb(7,29,33);
+    height: 50px;
+    border-top: solid 5px rgb(4,4,4);
+    border-bottom: solid 5px rgb(4,4,4);
+    border-right: solid 2px rgb(4,4,4);
+    border-left: solid 2px rgb(4,4,4);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 25%;
+}
+
+/*Styling for button on List Nav bar*/
+.listnavop {
+    color: rgb(187,187,187);
+    padding: 10px;
+    background-color: rgb(7,29,33);
+    display: inline-block;
+    min-width: 10%;
+    max-width: 15%;
+    text-align: center;
+    font-family: 'Spectral SC'. serif;
+    font-size: 1em;
+    margin-top: 5px;
+    animation: listnavunhover 1s ease-in-out 0s 1 reverse;
+    animation-fill-mode: forwards;
+}
+
+/*Styling for link on list nav when cursor hover*/
+.listnavop:hover {
+    animation: listnavhover 1s ease-in-out 0s 1 normal;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+/*Animation for list button on hover*/
+@keyframes listnavhover {
+    from {background-color: auto; color: auto;} to {background-color: rgba(187,187,187,0.7); color: rgb(4,4,4)}
+}
+
+@keyframes listnavunhover {
+    from {background-color: auto; color: auto;} to {background-color: rgba(187,187,187,0.7); color: rgb(4,4,4)}
+}
+/*Styling for active list button*/
+.listnav .active {
+    background-color: rgba(255,255,255,0.3);
+    color: rgb(4,4,4);
+}
+
+/*Styling for List Container*/
+.list {
+    background-color: rgb(7,29,33);
+    color: rgb(187,187,187);
+/*Border and Outside Styling*/
+    border-bottom: solid 5px rgb(4,4,4);
+    border-right: solid 2px rgb(4,4,4);
+    border-left: solid 2px rgb(4,4,4);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 400px;
+    overflow-y: scroll;
+}
+/*List*/
+.list_item {
+    height: 100px;
+    background-color: rgb(7,29,33);
+    width: auto;
+    padding: 20px;
+    animation: listunhover 1s ease-in-out 0s 1 reverse;
+    animation-fill-mode: forwards;
+    border-top: solid 1px rgb(4,4,4);
+    border-bottom: solid 1px rgb(4,4,4);
+    color: rgb(187,187,187);
+}
+/*Hover of List Item*/
+.list_item:hover {
+    animation: listhover 1s ease-in-out 0s 1 normal;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+/*Animation for list Item on hover*/
+@keyframes listhover {
+    from {background-color: auto;} to {background-color: rgba(255,255,255,0.2);}
+}
+
+@keyframes listunhover {
+    from {background-color: auto;} to {background-color: rgba(255,255,255,0.2);}
+}
+
+/*Left Side of List Item*/
+.list_left {
+    width: 20%;
+    float:left;
+    font-size: 1.25em;
+}
+/*Right side of List Item*/
+.list_right {
+    width: 80%;
+    float:left;
+    font-size: 0.9em;
+}
+
+.list_item i {
+    font-size: 5em;
+    margin-top: -5px;
+}
+
+/*End of Lower Styling*/
+
+
+/*Styling for Footer*/
+.footer {
+    background-color: rgb(7,29,33);
+    height: 200px;
+    color: rgb(187,187,187);
+    text-align: center;
+    padding: 20px;
+    margin: 100px -10% -100px;
+}
+/*End of styling for footer*/
+
+/*Styling for Gallery*/
+
+/* Position the image container */
+.container {
+    position: relative;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    border-radius: 5px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+/*Image styling */
+.mySlides img {
+    height: 300px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    border-bottom: solid 3px black;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(4,4,4,0.5);
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/* Container for image text */
+.caption-container {
+    font-family: 'Exo', sans-serif;
+    text-align: center;
+    padding: 2px 16px 4px;
+    color: rgb(255,255,255);
+    height: 30px;
+}
+
+/*Row of thumbnail images in gallery*/
+.row {
+    height: 90px;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 10px;
+}
+
+/* columns side by side of thumbnail images in gallery*/
+.column {
+    float: left;
+    height: 80%;
+    width: 15%;
+    margin-left: 3%;
+    margin-right: 2%;
+}
+/*Image inside column*/
+.column img {
+    height: 70px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+/*End of STyling for Gallery*/
 
 /*Styling for Links*/
 a {
     text-decoration: none;
 }
-
-/*Styling for Visited Links*/
-a:visited {
-    padding: 10px;
-}
-
-/*Styling for Hovering on Link*/
-a:hover {
-    font-weight: bold;
-    background-color: ;
-    padding: 10px;
-}
-
-/*Styling for Active Link*/
-a:active {
-    padding: 10px;
-    
-}
 /*End of Styling for links*/
 
+
+/*Styling for Website on phone/smaller screens*/
+@media screen and (max-width: 800px) {
+    
+    body {
+        margin: 0;
+    }
+    
+    .banner {
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .nav {
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+    }
+    
+    .navop {
+        min-width: 15%;
+    }
+    
+    .left,
+    .container,
+    .vis {
+        border-radius: 0;
+    }
+    
+    .main {
+        min-width: auto;
+        width: auto;
+    }
+    
+    .lower {
+        min-width: auto;
+        width: auto;
+    }
+    
+    .mySlides img {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .numbertext {
+        border-radius: 0;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    
+    .banner h1{
+        font-size: 4em;
+        padding-top: 40px;
+    }
+    
+    .nav {
+        background-color: rgb(79,80,82);
+    }
+    
+    .navop {
+        font-size: 1em;
+        border-radius: 0;
+        width: 20%;
+        padding: 10px 0;
+        height: 40px;
+    }
+    
+    .main {
+        margin-top: -30px;
+        height: auto;
+    }
+    
+    .word {
+        width: 100%;
+        height: 200px;
+    }
+    .vis {
+        width: 100%;
+        float: none;
+        margin-top: 250px;
+    }
+    
+    .column {
+        height: 60px;
+    }
+    
+    .listnav {
+        padding-left: 2%;
+        border-radius: 0;
+    }
+    
+    .listnavop {
+        width: 20%;
+        font-size: 0.9em;
+        padding: 10px 5px;
+    }
+    
+    .list_left{
+       font-size: 1em; 
+    }
+    
+    .list_right {
+        font-size: 0.7em;
+    }
+    
+    .footer {
+        margin-top: 50px;
+    }
+    
+}
