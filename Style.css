@@ -333,10 +333,6 @@ table a {
     color: rgb(187,187,187);
 }
 
-td {
-    
-}
-
 /*End of styling for footer*/
 
 /*Styling for Gallery*/
@@ -489,6 +485,14 @@ a {
         border-radius: 0;
     }
     
+    .footer {
+        width: auto;
+    }
+    
+    table {
+        width: auto;
+    }
+    
 }
 
 @media screen and (max-width: 550px) {
@@ -559,6 +563,21 @@ a {
     
     .footer {
         margin-top: 50px;
+        width: auto;
+        padding: 2px;
+    }
+    
+    /*Table styling*/
+    table {
+        margin:auto;
+        width: auto;
+        height: auto;
+        font-size: 0.8em;
+    }
+
+    th {
+        background-color: ;
+        width: 30px;
     }
     
 }
